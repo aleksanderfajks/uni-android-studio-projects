@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Podaj imię"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btnReadName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ODCZYTAJ IMIĘ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Licznik wciśnięć przycisku: 0"
+        android:textColor="#6200EE"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReadName"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCounter"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etFirstNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Pierwsza liczba"
+        android:inputType="numberDecimal"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/etSecondNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd1"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/etSecondNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Druga liczba"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etFirstNumber"
+        app:layout_constraintTop_toTopOf="@+id/etFirstNumber" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MNOŻENIE"
+        app:layout_constraintStart_toStartOf="@+id/etFirstNumber"
+        app:layout_constraintEnd_toEndOf="@+id/etFirstNumber"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstNumber"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wynik"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etSecondNumber"
+        app:layout_constraintEnd_toEndOf="@+id/etSecondNumber"
+        app:layout_constraintTop_toTopOf="@+id/btnMultiply"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMultiply"/>
+
+    <TextView
+        android:id="@+id/tvExamLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jak widzę zaliczenie z Androida:"
+        android:textColor="#D32F2F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiply"
+        android:layout_marginTop="32dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExamLabel"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 kolokwium"
+            android:textColor="#388E3C"
+            android:layout_marginEnd="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 kolokwia"
+            android:textColor="#F57C00"
+            android:layout_marginEnd="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Przepis z laborki!"
+            android:textColor="#1976D2"/>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

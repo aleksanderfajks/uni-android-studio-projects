@@ -1,0 +1,14 @@
+# Ignore build files
+**/build/
+**/.gradle/
+
+# Local config (contains SDK paths, etc.)
+**/local.properties
+
+# IDE files
+**/.idea/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
