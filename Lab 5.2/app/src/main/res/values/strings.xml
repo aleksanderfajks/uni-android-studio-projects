@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Kalkulator PPK</string>
+    <string name="title_ppk">Kalkulator PPK</string>
+    <string name="gross_salary_hint">Pensja brutto (PLN)</string>
+    <string name="employee_percent_hint">Wpłata pracownika (%)</string>
+    <string name="employer_percent_hint">Wpłata pracodawcy (%)</string>
+    <string name="years_to_retirement_hint">Lat do emerytury</string>
+    <string name="return_rate_hint">Stopa zwrotu (%)</string>
+    <string name="state_top_up_checkbox">Dopłaty państwa (240 zł/rok)</string>
+    <string name="retirement_years_hint">Okres wypłaty (lata)</string>
+    <string name="calculate_button">OBLICZ</string>
+    <string name="result_total">Suma na emeryturze: %.2f PLN</string>
+    <string name="result_monthly">Miesięczna wypłata: %.2f PLN</string>
+
+    <string name="default_gross">5000</string>
+    <string name="default_employee">2.0</string>
+    <string name="default_employer">1.5</string>
+    <string name="default_years">30</string>
+    <string name="default_return">3.0</string>
+    <string name="default_ret_period">20</string>
+</resources>

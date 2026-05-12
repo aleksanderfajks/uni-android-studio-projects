@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kalkulator BMI</string>
+    <string name="weight_hint">Waga (kg)</string>
+    <string name="height_hint">Wzrost (cm)</string>
+    <string name="calculate_button">Oblicz BMI</string>
+    <string name="bmi_result">Twoje BMI: %.2f</string>
+    <string name="enter_values">Podaj wagę i wzrost</string>
+    <string name="bmi_starvation">Wygłodzenie</string>
+    <string name="bmi_emaciation">Wychudzenie</string>
+    <string name="bmi_underweight">Niedowaga</string>
+    <string name="bmi_normal">Waga prawidłowa</string>
+    <string name="bmi_overweight">Nadwaga</string>
+    <string name="bmi_obesity_1">Otyłość I stopnia</string>
+    <string name="bmi_obesity_2">Otyłość II stopnia</string>
+    <string name="bmi_obesity_3">Otyłość III stopnia</string>
+</resources>
