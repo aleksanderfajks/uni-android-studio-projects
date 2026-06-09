@@ -29,11 +29,9 @@ class MenuFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "Przejście do: MenuFragment")
 
-        // Konfiguracja ViewPager2
         val adapter = MenuPagerAdapter(this)
         binding.viewPager.adapter = adapter
 
-        // Połączenie TabLayout z ViewPager2
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             tab.text = when (position) {
                 0 -> "Pizza"

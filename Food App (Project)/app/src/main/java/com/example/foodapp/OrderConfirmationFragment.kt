@@ -28,10 +28,8 @@ class OrderConfirmationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "Przejście do: OrderConfirmationFragment")
 
-        // Toast przy wejściu na ekran
         Toast.makeText(requireContext(), "Zamówienie złożone! Dziękujemy!", Toast.LENGTH_LONG).show()
 
-        // Przycisk powrotu do menu
         binding.btnBackToMenu.setOnClickListener {
             findNavController().navigate(R.id.action_orderConfirmationFragment_to_menuFragment)
         }
